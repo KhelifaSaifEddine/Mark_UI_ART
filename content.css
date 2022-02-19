@@ -1,0 +1,126 @@
+.section-player-details{
+    position: relative;
+    z-index: 1;
+   justify-content: space-evenly;
+   align-items: center;
+   color: #ffffff;
+
+   font-family: 'Bitter', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.section-player-details > img{
+    align-self: center;
+    margin-left : 50px;
+}
+.background-content{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+   
+    background-size: 100% 100%;
+}
+.background-content-borders{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    
+    background-size: 100% 100%;
+}
+.details-calendar{
+    display: flex;
+    flex-direction:column;
+    padding: 60px;
+}
+
+.content-grid-status{
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
+    gap: 50px;
+    padding-bottom: 60px;
+}
+.content-grid-status >div {
+    display: grid;
+    grid-template-columns: 200px 68px auto;
+    grid-row: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.content-grid-status .grid-first  {
+   grid-column: 1/2;
+   
+
+}
+
+.content-grid-status .grid-last  {
+    grid-column: 3/4;
+    margin: 20px;
+   
+}
+.content-grid-status  >div >img {
+    grid-column: 2/3;
+}
+
+
+.content-grid-status-item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.content-grid-status-item2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.content-grid-status-item3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.content-grid-status-item4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.content-grid-status-item5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+*{
+    box-sizing: border-box;
+}
+.canvas0{
+    position: absolute;
+  
+    top: 0.5%;
+  
+    right: 0%;
+   
+}
+.canvas1{
+    position: absolute;
+   
+    top: 0.5%;
+    left: 0.5%;
+}
+
+
+
+.doubledborder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    font-family: sans-serif;
+    padding: 40px;
+    margin-bottom: 30px;
+    border: 4px solid #9c6e3f;
+    outline:1px solid #9c6e3f;
+     outline-offset:-10px;
+    background: rgba(33, 26, 36, 0.9);
+    background-size: cover;
+    z-index: -1;
+}

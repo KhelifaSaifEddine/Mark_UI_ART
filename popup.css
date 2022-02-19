@@ -1,0 +1,86 @@
+.section-popup{
+    position: fixed;
+    margin: auto;
+    flex-direction: column;
+    top: 30%;
+    bottom: 20%;
+    padding-top: 2%;
+    width: 960px;
+    height: 540px;
+    background-image: url("./images/Popup/Background_Popup.png");    font-size: 25px;
+    z-index: 5;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Bitter', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  display: none;
+}
+.section-popup.open{
+    display: flex;
+}
+.section-popup > div{
+    display: flex;
+    gap: 60px;
+ 
+}
+.section-popup > p{
+    color: #c4a07b;
+    font-weight: bold;
+    font-size: 45px;
+   
+ }
+ #close_button_animation{
+    width: 10%;
+   position: absolute;
+   top: -5%;
+   right: -3%;
+   cursor: pointer;
+}
+.Upload_hover_div{
+    position: relative;
+}
+
+.Quest_hover_div{
+    position: relative;
+}
+
+.Dungeons_hover_div{
+    position: relative;
+}
+
+.Upload_hover{
+    position: absolute;
+}
+
+.Quest_hover{
+    position: absolute;
+}
+
+.Dungeons_hover{
+    position: absolute;
+}
+
+
+.button_Quest{
+    opacity: 0;
+    transition: .9s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.button_Quest.active{
+    opacity: 1;
+}
+
+.button_Upload{
+    opacity: 0;
+    transition: .9s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.button_Upload.active{
+    opacity: 1;
+}
+.button_Dungeons{
+    opacity: 0;
+    transition: .9s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.button_Dungeons.active{
+    opacity: 1;
+}
